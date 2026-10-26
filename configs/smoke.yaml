@@ -1,0 +1,17 @@
+data: datasets/mower_v1_snapshot/data.yaml
+architecture: yolo26s
+pretrained_checkpoint: models/yolo26s.pt
+epochs: 1
+batch: 2
+imgsz: 640
+device: 0
+workers: 0
+seed: 42
+optimizer: AdamW
+lr0: 0.001
+patience: 1
+amp: false
+project: outputs/experiments
+name: smoke
+resume: false
+validate_data: true
